@@ -1,0 +1,90 @@
+<!DOCTYPE HTML/>
+<html  lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>Responsiv footer.</title>
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Footer Down Below</h1>
+    </header>
+    <footer>
+        <section class="column">
+            <h2>Instruktioner</h2>
+
+            <ul>
+                <li>Du väljer själv de exakta brytpunkterna, det viktiga är att det är tre olika layouter som presenteras (i.e. mobil/tablet/desktop).</li>
+                <li><strong><em>index.html skall inte redigeras!</em></strong></li>
+                <li>jQuery finns inkluderat, utöver det önskar vi endast se <strong><em>din egenutvecklade kod</em></strong>.</li>
+                <li>Använd css/style.css samt js/footer.js för din kod</li>
+            </ul>
+            
+            <h2>Validering</h2>
+            <p>Alla fält är obligatoriska och här följer regler för validering av formuläret</p>
+            <ul>
+                <li><strong>Namn: </strong> minst tre tecken med ett mellanslag. (e.g. "a a" är ok, "bbb" är inte ok)</li>
+                <li><strong>Ålder: </strong> måste vara ett heltal mellan 0 och 125</li>
+                <li><strong>Favorit: </strong> måste välja ett alternativ</li>
+                <li><strong>Info: </strong> minst 30 tecken.</li>
+            </ul>
+
+        </section>
+        <section class="column">
+            <h2>Introduktion</h2>
+            <p>
+                <strong>Hej och välkommen!</strong>
+            </p>
+            
+            <p>
+                För att få bättre grepp om dina kunskaper i JavaScript samt CSS så får du här en uppgift att lösa.<br>
+                Uppgiften går ut på att styla upp sidan så att den ser ut ungefär som de bifogade skärmdumparna gör samt att formuläret valideras.
+            </p>
+            
+            <p>
+                Formuläret behöver inte skickas och det räcker att logga i konsollen (e.g. console.log()) vad som händer när man trycker på knappen (om formuläret är korrekt ifyllt alternativt ett felmeddelande).
+            </p>
+
+            <p>Läs instruktionerna i den andra kolumnen för vidare information.</p>
+        </section>
+        <section class="column">
+            <h2>Kontakta oss</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Uppgiftslämnare</legend>
+                    <div class="textinput">
+                        <label for="namn">Ditt namn:</label>
+                        <input type="text" name="namn" placeholder="ex. Anders Andersson">
+                    </div>
+                    
+                    <div class="textinput">
+                        <label for="namn">Din ålder:</label>
+                        <input type="text" name="alder" placeholder="ex. 25">
+                    </div>
+
+                    <div class="radioSelection">
+                        <label>Välj din favorit</label>            
+                        <input type="radio" name="favorit" id="html" value="html">
+                        <label for="html">HTML</label>
+                        <input type="radio" name="favorit" id="js" value="js">
+                        <label for="js">JavaScript</label>
+                        <input type="radio" name="favorit" id="css" value="css">
+                        <label for="css">CSS</label>
+                    </div>
+
+                    <div class="textareainput">
+                        <label for="info">Lite om dig:</label>
+                        <textarea placeholder="Skriv lite om dig själv. Det här fältet kan expanderas i höjdled men ej i sidled genom att använda 'handtaget' i hörnet nere till höger"></textarea>
+                    </div>
+
+                    <div class="action">
+                        <button>Skicka</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script> 
+<script type="text/javascript" src="js/footer.js"></script>
+</html>
